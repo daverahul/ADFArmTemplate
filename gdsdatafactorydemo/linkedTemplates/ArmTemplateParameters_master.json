@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "gdsdatafactorydemo"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStoragetemp_accountKey": {
+			"value": ""
+		},
+		"Snowflaketemp_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://gdsstorage2024aug.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStoragetemp_properties_typeProperties_url": {
+			"value": "https://azuredatafactorygds.dfs.core.windows.net/"
+		},
+		"Snowflaketemp_properties_typeProperties_database": {
+			"value": "SALES_MART"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
