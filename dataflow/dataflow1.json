@@ -63,7 +63,12 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     stageInsert: true) ~> sink"
+				"     stageInsert: true,",
+				"     mapColumn(",
+				"          YEAR_ID,",
+				"          MONTH_ID,",
+				"          TOTALSALES = TotalSales",
+				"     )) ~> sink"
 			]
 		}
 	}
